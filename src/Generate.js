@@ -1,5 +1,7 @@
 import {startSyllables, middleSyllables, endSyllables} from "./Constants";
 
+// simple algorithm to generate random ikea product
+// names from the Syllables arrays
 export function GenerateName() {
     let name = "";
     name += startSyllables[getRandom(startSyllables.length - 1)]
@@ -10,6 +12,8 @@ export function GenerateName() {
     return name;
 }
 
+
+// returns a random integer
 function getRandom(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
