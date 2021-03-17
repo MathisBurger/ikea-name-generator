@@ -4,10 +4,6 @@ import {GenerateName} from "../Generate";
 
 export class Namecard extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 
         // generate a list of name cards
