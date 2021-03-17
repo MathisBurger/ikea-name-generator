@@ -1,0 +1,28 @@
+.name-card {
+    margin-top: 1em;
+    width: 750px;
+
+}
+
+.name-card-head {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 1px solid dimgrey;
+    margin-top: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #efe1d8;
+}
+
+.name-card-element {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border: 1px solid dimgrey;
+    margin-top: -1px;
+}

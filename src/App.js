@@ -1,18 +1,11 @@
 import './App.css';
-import {GenerateName} from "./Generate";
+import {MainComponent} from "./MainCompoenent";
 
 function App() {
   return (
-    <div className={"container"}>
-      <button className={"btn-grad"} onClick={() => generateClick()}>Generate</button>
-    </div>
+    <MainComponent />
   );
 
 }
-
-function generateClick() {
-    console.log(GenerateName());
-}
-
 
 export default App;
