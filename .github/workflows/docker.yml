@@ -28,12 +28,12 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
 
-      - run: npm run build -- --output-path=./dist
+      - run: npm run build
 
       - uses: actions/upload-artifact@v2
         with:
           name: frontend
-          path: dist
+          path: build
 
   docker:
     needs: build
