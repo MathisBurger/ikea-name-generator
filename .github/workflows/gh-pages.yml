@@ -2,6 +2,8 @@ name: GH-Pages
 
 on:
   pull_request:
+    types:
+      - closed
     branches:
       - master
   push:
