@@ -1,16 +1,19 @@
-FROM node:14-alpine
+FROM node:14-alpine AS build
 
-WORKDIR /app
+WORKDIR /build
 
 COPY . .
 
-RUN npm ci
+RUN npm i
 RUN npm run build
 
-RUN npm i -g serve
+FROM node:14-alpine AS final
 
-RUN rm -r ./node_modules
-RUN rm -r ./src
+RUN mkdir build
+
+COPY --from=build ./build/build ./build
+
+RUN npm i -g serve
 
 EXPOSE 5000
 
